@@ -1,0 +1,42 @@
+/* Filename - App.css*/
+.App {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+th {
+	border: 1px solid black;
+}
+
+td {
+	text-align: center;
+}
+.bold{
+	font-style: bold;
+}
+.border{
+	border: 3px solid black
+}
+.spacing{
+	margin: 25px;
+}
+
+.print-button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 12rem;
+    margin-bottom: 12px;
+}
+
+@media print {
+    .print-button-container {
+        visibility: hidden;
+    }
+}
