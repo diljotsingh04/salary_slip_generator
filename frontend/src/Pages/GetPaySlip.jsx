@@ -75,64 +75,64 @@ const GetPaySlip = () => {
                                 <td>EMOLUMENTS  </td>
                                 <td> </td>
                                 <td>AMOUNT Rs.</td>
-                                <td>DEDUCTIONS</td>
                                 <td> </td>
+                                <td>DEDUCTIONS</td>
                                 <td>AMOUNT Rs.</td>
                             </tr>
                             <tr>
                                 <td>Basic Pay</td>
                                 <td> </td>
                                 <td>{data.basicPay}</td>
-                                <td>Profession Tax</td>
                                 <td> </td>
+                                <td>Profession Tax</td>
                                 <td> -   </td>
                             </tr>
                             <tr>
                                 <td>House Rent Allowance</td>
                                 <td> </td>
                                 <td>{data.homeAll}</td>
-                                <td>Provident Fund</td>
                                 <td> </td>
+                                <td>Provident Fund</td>
                                 <td> - </td>
                             </tr>
                             <tr>
                                 <td>Dearness Allowance</td>
                                 <td> </td>
                                 <td>{data.dearAllo}</td>
-                                <td>ESI</td>
                                 <td> </td>
+                                <td>ESI</td>
                                 <td> -   </td>
                             </tr>
                             <tr>
                                 <td>Medical Allowance</td>
                                 <td> </td>
                                 <td>{data.medicalAll}</td>
-                                <td>L/W</td>
                                 <td> </td>
+                                <td>L/W</td>
                                 <td> - </td>
                             </tr>
                             <tr>
                                 <td>Vehicle Allowance</td>
                                 <td> </td>
                                 <td> -   </td>
-                                <td>Group Insurance</td>
                                 <td> </td>
+                                <td>Group Insurance</td>
                                 <td> -   </td>
                             </tr>
                             <tr>
                                 <td>Washing Allowance</td>
                                 <td> </td>
                                 <td> </td>
-                                <td>Income Tax(TDS)</td>
                                 <td> </td>
+                                <td>Income Tax(TDS)</td>
                                 <td> -   </td>
                             </tr>
                             <tr>
                                 <td>Other Allowance</td>
                                 <td> </td>
                                 <td> </td>
-                                <td>Advance</td>
                                 <td> </td>
+                                <td>Advance</td>
                                 <td> -   </td>
                             </tr>
                             <tr>
@@ -147,8 +147,8 @@ const GetPaySlip = () => {
                                 <td>Gross Pay</td>
                                 <td> </td>
                                 <td>{data.grossPay}</td>
+                                <td> ----------------</td>
                                 <td>Total deduction</td>
-                                <td> </td>
                                 <td> - </td>
                             </tr>
                             <tr>
