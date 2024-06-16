@@ -2,8 +2,9 @@ const express = require("express");
 const multer = require("multer");
 const path = require("path");
 const csv = require('csvtojson');
-const {User} = require('./models/User');
+const { User } = require('./models/User');
 const cors = require('cors');
+const fsExtra = require('fs-extra');
 
 const app = express();
 
@@ -46,6 +47,9 @@ app.post('/uploaddata', upload.single('file'), async (req, res) => {
         }
 
         await User.insertMany(user);
+        const folder = './public/uploads'
+
+        fsExtra.emptyDirSync(folder);
 
         return res.send({
             success: true,
@@ -61,8 +65,8 @@ app.post('/uploaddata', upload.single('file'), async (req, res) => {
     }
 });
 
-app.get('/getdata', async(req, res)=>{
-    try{
+app.get('/getdata', async (req, res) => {
+    try {
         const data = await User.find({});
 
         return res.send({
@@ -70,7 +74,7 @@ app.get('/getdata', async(req, res)=>{
             data: data
         })
     }
-    catch(e){
+    catch (e) {
         return res.send({
             success: false,
             message: 'error fetching data'
@@ -78,18 +82,18 @@ app.get('/getdata', async(req, res)=>{
     }
 });
 
-app.get('/getuserdata/:id', async(req, res)=>{
+app.get('/getuserdata/:id', async (req, res) => {
     const id = req.params.id;
 
-    try{
-        const data = await User.findOne({_id: id});
+    try {
+        const data = await User.findOne({ _id: id });
 
         return res.send({
             success: true,
             data: data
         })
     }
-    catch(e){
+    catch (e) {
         return res.send({
             success: false,
             message: 'error fetching data'
