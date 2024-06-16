@@ -1,5 +1,5 @@
 ```
-git clone https://github.com/diljotsingh04/salary_slip_generator/tree/master
+git clone https://github.com/diljotsingh04/salary_slip_generator.git
 ```
 
 # For Frontend
